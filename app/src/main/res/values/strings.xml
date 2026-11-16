@@ -22,4 +22,11 @@
     <string name="refresh">Refresh</string>
     <string name="logout">Logout</string>
     <string name="disclaimer_notice">Notice: River discharge forecasts are model estimates from the Open-Meteo Flood API for the nearest supported grid. Always follow official government disaster advisories.</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="location">Location</string>
+    <string name="detect_location">Detect Location</string>
+    <string name="retry">Retry</string>
+    <string name="unavailable">UNAVAILABLE</string>
+    <string name="peak_day_format">Peak Day: %s</string>
+    <string name="default_badge">DEFAULT</string>
 </resources>

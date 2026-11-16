@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.floodrisk.adapter.MonitoredPlacesAdapter
 import com.example.floodrisk.databinding.ActivityMonitoredPlacesBinding
-import com.example.floodrisk.model.MonitoredPlace
 import com.example.floodrisk.viewmodel.MonitoredPlacesViewModel
 
 class MonitoredPlacesActivity : AppCompatActivity() {

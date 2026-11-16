@@ -70,8 +70,8 @@ class NotificationHelper(private val context: Context) {
             return@withContext false
         }
 
-        val dischargeStr = alertDay.riverDischarge?.let { String.format("%.2f m³/s", it) }
-            ?: alertDay.riverDischargeMax?.let { String.format("%.2f m³/s", it) }
+        val dischargeStr = alertDay.riverDischarge?.let { String.format(java.util.Locale.US, "%.2f m³/s", it) }
+            ?: alertDay.riverDischargeMax?.let { String.format(java.util.Locale.US, "%.2f m³/s", it) }
             ?: "High"
 
         val intent = Intent(context, MainActivity::class.java).apply {

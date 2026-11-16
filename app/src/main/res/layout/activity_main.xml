@@ -31,7 +31,7 @@
                     android:id="@+id/ivUserProfile"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:contentDescription="Profile Picture"
+                    android:contentDescription="@string/profile_picture"
                     android:src="@drawable/ic_river" />
 
                 <TextView
@@ -97,7 +97,7 @@
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
-                            android:contentDescription="Location"
+                            android:contentDescription="@string/location"
                             android:src="@drawable/ic_river"
                             app:tint="@color/primary_blue" />
 
@@ -151,7 +151,7 @@
                             android:layout_height="44dp"
                             android:layout_weight="1"
                             android:paddingHorizontal="4dp"
-                            android:text="Detect Location"
+                            android:text="@string/detect_location"
                             android:textSize="12sp"
                             app:icon="@drawable/ic_river"
                             app:iconSize="16dp" />
@@ -175,16 +175,23 @@
             </com.google.android.material.card.MaterialCardView>
 
             <!-- Scientific Limitation Notice -->
-            <TextView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/ic_launcher_background"
-                android:padding="12dp"
-                android:text="@string/disclaimer_notice"
-                android:textColor="@color/text_secondary"
-                android:textSize="12sp" />
+                app:cardCornerRadius="12dp"
+                app:cardElevation="1dp"
+                app:cardBackgroundColor="@color/surface_card">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/disclaimer_notice"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+            </com.google.android.material.card.MaterialCardView>
 
             <!-- Today's River Status Card -->
             <com.google.android.material.card.MaterialCardView
@@ -378,7 +385,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Retry"
+                    android:text="@string/retry"
                     app:backgroundTint="@color/primary_blue" />
 
             </LinearLayout>
