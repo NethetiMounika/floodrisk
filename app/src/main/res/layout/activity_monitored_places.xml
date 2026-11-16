@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_blue_bg">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_blue"
+        app:title="@string/monitored_places"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_river"
+        app:navigationIconTint="@color/white" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPlaces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="88dp"
+            android:clipToPadding="false"
+            tools:listitem="@layout/item_monitored_place" />
+
+        <TextView
+            android:id="@+id/tvEmptyState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="24dp"
+            android:text="No saved places yet.\nTap + below to add a monitored place."
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabAddPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="24dp"
+        android:text="@string/add_place"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/primary_blue"
+        app:icon="@drawable/ic_river"
+        app:iconTint="@color/white" />
+
+</LinearLayout>

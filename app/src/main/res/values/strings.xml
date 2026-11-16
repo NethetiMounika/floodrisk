@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">River Flood Watch</string>
+    <string name="login_title">River Flood Watch</string>
+    <string name="login_subtitle">Monitor river discharge forecasts and stay alert to potential flood risks.</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="continue_as_guest">Continue as Local User</string>
+    <string name="today_status">Today\'s River Status</string>
+    <string name="peak_forecast">Peak Discharge Forecast</string>
+    <string name="forecast_30_days">30-Day Discharge Forecast</string>
+    <string name="monitored_places">Monitored Places</string>
+    <string name="add_place">Add Monitored Place</string>
+    <string name="edit_place">Edit Monitored Place</string>
+    <string name="place_name">Place Name</string>
+    <string name="latitude">Latitude (-90 to 90)</string>
+    <string name="longitude">Longitude (-180 to 180)</string>
+    <string name="set_as_default">Set as default monitored place</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="use_current_location">Use Current Location</string>
+    <string name="refresh">Refresh</string>
+    <string name="logout">Logout</string>
+    <string name="disclaimer_notice">Notice: River discharge forecasts are model estimates from the Open-Meteo Flood API for the nearest supported grid. Always follow official government disaster advisories.</string>
+</resources>

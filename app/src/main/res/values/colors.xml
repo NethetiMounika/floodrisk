@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_blue">#0D47A1</color>
+    <color name="primary_dark_blue">#002171</color>
+    <color name="accent_blue">#0288D1</color>
+    <color name="light_blue_bg">#E1F5FE</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- Risk Colors -->
+    <color name="risk_normal">#2E7D32</color>
+    <color name="risk_normal_bg">#E8F5E9</color>
+    <color name="risk_watch">#F57F17</color>
+    <color name="risk_watch_bg">#FFFDE7</color>
+    <color name="risk_alert">#C62828</color>
+    <color name="risk_alert_bg">#FFEBEE</color>
+    <color name="risk_unavailable">#757575</color>
+</resources>

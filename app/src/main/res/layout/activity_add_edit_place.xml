@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_blue_bg">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_blue"
+        app:title="@string/add_place"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_river"
+        app:navigationIconTint="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPlaceName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/place_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPlaceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilLatitude"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/latitude">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLatitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilLongitude"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/longitude">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLongitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUseCurrentLocation"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/use_current_location"
+                app:icon="@drawable/ic_river" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbSetDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/set_as_default"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tvErrorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/risk_alert"
+                android:textSize="14sp"
+                android:visibility="gone"
+                tools:text="Please enter valid coordinates."
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCancel"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:text="@string/cancel" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/save"
+                    app:backgroundTint="@color/primary_blue" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
